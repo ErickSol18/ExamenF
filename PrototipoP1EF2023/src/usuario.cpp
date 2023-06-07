@@ -728,8 +728,8 @@ void usuario::desplegarAdministracion()
 	cout << "     __^__                                     __^__"<< endl;
     cout << "    ( ___ )-----------------------------------( ___ )"<< endl;
     cout << "     | / |                                     | / |"<< endl;
-    cout << "     | / |    Tabla de Detalles de Pacientes   | / |"<< endl;
-    cout << "     |___|            Dolor de Mario          |___|"<< endl;
+    cout << "     | / |    Tabla de Peliculas               | / |"<< endl;
+    cout << "     |___|            Pelicula de Mario        |___|"<< endl;
     cout << "     |___|                                     |___|"<< endl;
     cout << "    (_____)-----------------------------------(_____)"<< endl;
     cout << "====================================================" << endl;
@@ -770,8 +770,8 @@ void usuario::desplegarVentas()
     cout << "     __^__                                     __^__"<< endl;
     cout << "    ( ___ )-----------------------------------( ___ )"<< endl;
     cout << "     | / |                                     | / |"<< endl;
-    cout << "     | / |    Tabla de Detalles de Pacientes   | / |"<< endl;
-    cout << "     |___|           Dolor de Guardianes         |___|"<< endl;
+    cout << "     | / |    Tabla de Peliculas               | / |"<< endl;
+    cout << "     |___|            Pelicula de Guardianes   |___|"<< endl;
     cout << "     |___|                                     |___|"<< endl;
     cout << "    (_____)-----------------------------------(_____)"<< endl;
     cout << "====================================================" << endl;
@@ -812,8 +812,8 @@ void usuario::desplegarContabilidad()
     cout << "     __^__                                     __^__"<< endl;
     cout << "    ( ___ )-----------------------------------( ___ )"<< endl;
     cout << "     | / |                                     | / |"<< endl;
-    cout << "     | / |    Tabla de Detalles de Pacientes   | / |"<< endl;
-    cout << "     |___|           Dolor de SpiderMan         |___|"<< endl;
+   cout << "     | / |    Tabla de Peliculas                | / |"<< endl;
+    cout << "     |___|            Pelicula de SpiderMan    |___|"<< endl;
     cout << "     |___|                                     |___|"<< endl;
     cout << "    (_____)-----------------------------------(_____)"<< endl;
     cout << "====================================================" << endl;
@@ -854,8 +854,8 @@ void usuario::desplegarRecepcion()
     cout << "     __^__                                     __^__"<< endl;
     cout << "    ( ___ )-----------------------------------( ___ )"<< endl;
     cout << "     | / |                                     | / |"<< endl;
-    cout << "     | / |    Tabla de Detalles de Pacientes   | / |"<< endl;
-    cout << "     |___|              Rapidos leve            |___|"<< endl;
+    cout << "     | / |    Tabla de Peliculas               | / |"<< endl;
+    cout << "     |___|            Pelicula de Rapidos      |___|"<< endl;
     cout << "     |___|                                     |___|"<< endl;
     cout << "    (_____)-----------------------------------(_____)"<< endl;
     cout << "====================================================" << endl;
