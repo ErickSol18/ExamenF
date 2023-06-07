@@ -539,7 +539,7 @@ void usuario::desplegarTrabajador()
     cout << "                     |___|                                     |___|"<< endl;
     cout << "                    (_____)-----------------------------------(_____)"<< endl;
     cout << "===============================================================================================" << endl;
-    cout << "ID             NOMBRE          APELLIDO          DPI         TELEFONO         ENFERMEDAD       " << endl;
+    cout << "ID             NOMBRE          APELLIDO          DPI         TELEFONO         Pelicula         " << endl;
     cout << "===============================================================================================" << endl;
 	file.open("Usuarios.txt",ios::in);
 	if(!file)
@@ -896,7 +896,7 @@ void usuario::menuDepartamentos()
     cout << "          __^__                                     __^__"<< endl;
     cout << "         ( ___ )-----------------------------------( ___ )"<< endl;
     cout << "          | / |                                     | / |"<< endl;
-    cout << "          | / |         MENU DE ENFERMEDADES        | / |"<< endl;
+    cout << "          | / |         MENU DE Peliculas           | / |"<< endl;
     cout << "          |___|                                     |___|"<< endl;
     cout << "         (_____)-----------------------------------(_____)"<< endl;
     cout << "\        -------------------------------------------------"<< endl;
