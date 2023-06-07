@@ -21,7 +21,7 @@ class usuario
 {
 	private:
 		string IDAdministrador,nameAdministrador,passwordAdministrador;
-		string ID,name, apellido, dpi, enfermedad;
+		string ID,name, apellido, dpi, Pelicula;
 		int telefono;
 	public:
 		void menuAdministrador();

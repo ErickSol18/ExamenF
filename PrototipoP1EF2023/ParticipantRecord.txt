@@ -42,3 +42,17 @@
   ADMINISTRADOR           7001     Wed Jun 07 11:25:35 2023
           Erick           7001     Wed Jun 07 11:32:56 2023
           Erick           7400     Wed Jun 07 11:33:12 2023
+          Erick           7001     Wed Jun 07 12:01:27 2023
+          Erick           7300     Wed Jun 07 12:01:32 2023
+          Erick           7302     Wed Jun 07 12:02:04 2023
+          Erick           7001     Wed Jun 07 12:02:20 2023
+          Erick           7300     Wed Jun 07 12:02:22 2023
+          Erick           7001     Wed Jun 07 12:02:45 2023
+          Erick           7302     Wed Jun 07 12:02:58 2023
+          Erick           7001     Wed Jun 07 12:03:16 2023
+          Erick           7300     Wed Jun 07 12:03:18 2023
+          Erick           7304     Wed Jun 07 12:03:22 2023
+          Erick           7300     Wed Jun 07 12:03:23 2023
+          Erick           7302     Wed Jun 07 12:03:37 2023
+          Erick           7400     Wed Jun 07 12:03:45 2023
+          Erick           7999     Wed Jun 07 12:03:59 2023

@@ -481,7 +481,7 @@ void usuario::insertarTrabajador()
     {
         Pelicula="Mario";
         file.open("Mario.txt", ios::app | ios::out);
-        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
+        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< Pelicula << "\n";
         bitacora bit;
         codigo="7301";
         bit.ingreso(nameAdministrador,codigo);
@@ -491,8 +491,7 @@ void usuario::insertarTrabajador()
     {
         Pelicula="SpiderMan";
         file.open("SpiderMan.txt", ios::app | ios::out);
-        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
-        bitacora bit;
+        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< Pelicula << "\n";
         codigo="7301";
         bit.ingreso(nameAdministrador,codigo);
         file.close();
@@ -501,7 +500,7 @@ void usuario::insertarTrabajador()
     {
         Pelicula="Guardianes";
         file.open("Guardianes.txt", ios::app | ios::out);
-        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
+        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< Pelicula << "\n";
         bitacora bit;
         codigo="7301";
         bit.ingreso(nameAdministrador,codigo);
@@ -511,14 +510,14 @@ void usuario::insertarTrabajador()
     {
         Pelicula="Rapidos";
         file.open("Rapidos.txt", ios::app | ios::out);
-        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
+        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< Pelicula << "\n";
         bitacora bit;
         codigo="7301";
         bit.ingreso(nameAdministrador,codigo);
         file.close();
     }
     file.open("Usuarios.txt", ios::app | ios::out);
-    file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
+    file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< Pelicula << "\n";
 	bitacora bit;
 	codigo="7301";
 	bit.ingreso(nameAdministrador,codigo);
@@ -590,7 +589,7 @@ void usuario::modificarTrabajador()
 		{
 			if(user_ID!=ID)
 			{
-                file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
+                file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< Pelicula << "\n";
 			}
 			else
 			{
@@ -604,7 +603,7 @@ void usuario::modificarTrabajador()
 				cin >> telefono;
 				cout << "\t\t\tIngrese Departamento Persona: ";
 				cin >> Pelicula;
-                file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
+                file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< Pelicula << "\n";
 				found++;
 			}
 			        file >> ID >> name >> apellido >> dpi >> telefono >> Pelicula ;
@@ -696,7 +695,7 @@ void usuario::borrarTrabajador()
 		{
 			if(user_ID!=ID)
 			{
-                file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
+                file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< Pelicula << "\n";
 			}
 			else
 			{
@@ -904,10 +903,10 @@ void usuario::menuDepartamentos()
     cout << "                 *===============================*"<< endl;
     cout << "                 |   Porfavor, elije una opcion  |"<< endl;
     cout << "                 |                               |"<< endl;
-    cout << "                 | 1. Mario                      |"<< endl;
-    cout << "                 | 2. Guardianes                 |"<< endl;
-    cout << "                 | 3. SpiderMan                  |"<< endl;
-    cout << "                 | 4. Rapidos                    |"<< endl;
+    cout << "                 | 1. Mario 3:30 pm              |"<< endl;
+    cout << "                 | 2. Guardianes 12:15 pm        |"<< endl;
+    cout << "                 | 3. SpiderMan 16:45 pm         |"<< endl;
+    cout << "                 | 4. Rapidos 8:00 am            |"<< endl;
     cout << "                 | 5. Salir del sistema          |"<< endl;
     cout << "                 |                               |"<< endl;
     cout << "                 |      Ingresa una Opcion       |"<< endl;
