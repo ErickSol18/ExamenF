@@ -21,9 +21,8 @@ class usuario
 {
 	private:
 		string IDAdministrador,nameAdministrador,passwordAdministrador;
-		string ID,name,password, departamento;
-		int telefono, salario,cantidadHoras, valorHoras, totalHoras;
-		double IGSS, IRTRA, salarioNeto, adelantos;
+		string ID,name, apellido, dpi, enfermedad;
+		int telefono;
 	public:
 		void menuAdministrador();
 		void insertarAdministrador();

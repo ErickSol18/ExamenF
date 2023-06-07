@@ -514,7 +514,7 @@
 	<vector>
 	<chrono>
 
-1686148302 source:c:\users\erick solares\downloads\nueva carpeta (5)\final\proyectofinal\main.cpp
+1686148302 source:c:\users\lima\desktop\progra1\proyectos\tareasprograuno2k23\examen final\prototipop1ef2023\main.cpp
 	"usuario.h"
 	"bitacora.h"
 	<iostream>
@@ -527,7 +527,7 @@
 	<vector>
 	<chrono>
 
-1686148302 c:\users\erick solares\downloads\nueva carpeta (5)\final\proyectofinal\include\usuario.h
+1686158034 c:\users\lima\desktop\progra1\proyectos\tareasprograuno2k23\examen final\prototipop1ef2023\include\usuario.h
 	"usuario.h"
 	"bitacora.h"
 	<iostream>
@@ -540,7 +540,7 @@
 	<vector>
 	<chrono>
 
-1686148302 c:\users\erick solares\downloads\nueva carpeta (5)\final\proyectofinal\include\bitacora.h
+1686148302 c:\users\lima\desktop\progra1\proyectos\tareasprograuno2k23\examen final\prototipop1ef2023\include\bitacora.h
 	"usuario.h"
 	<iostream>
 	<fstream>
@@ -552,7 +552,7 @@
 	<vector>
 	<chrono>
 
-1686148302 source:c:\users\erick solares\downloads\nueva carpeta (5)\final\proyectofinal\src\bitacora.cpp
+1686148302 source:c:\users\lima\desktop\progra1\proyectos\tareasprograuno2k23\examen final\prototipop1ef2023\src\bitacora.cpp
 	"bitacora.h"
 	<iostream>
 	<fstream>
@@ -564,20 +564,7 @@
 	<vector>
 	<chrono>
 
-1686148302 source:c:\users\erick solares\downloads\nueva carpeta (5)\final\proyectofinal\src\usuario.cpp
-	"usuario.h"
-	"bitacora.h"
-	<iostream>
-	<fstream>
-	<stdlib.h>
-	<cstdlib>
-	<conio.h>
-	<iomanip>
-	<string>
-	<vector>
-	<chrono>
-
-1686148302 source:c:\users\erick solares\onedrive\documentos\progra 1\examenf\proyectofinal\main.cpp
+1686155430 source:c:\users\lima\desktop\progra1\proyectos\tareasprograuno2k23\examen final\prototipop1ef2023\src\usuario.cpp
 	"usuario.h"
 	"bitacora.h"
 	<iostream>
@@ -590,7 +577,7 @@
 	<vector>
 	<chrono>
 
-1686148302 c:\users\erick solares\onedrive\documentos\progra 1\examenf\proyectofinal\include\usuario.h
+1686148302 source:c:\users\erick solares\downloads\nueva carpeta (5)\prototipop1ef2023\main.cpp
 	"usuario.h"
 	"bitacora.h"
 	<iostream>
@@ -603,19 +590,8 @@
 	<vector>
 	<chrono>
 
-1686148302 c:\users\erick solares\onedrive\documentos\progra 1\examenf\proyectofinal\include\bitacora.h
+1686158034 c:\users\erick solares\downloads\nueva carpeta (5)\prototipop1ef2023\include\usuario.h
 	"usuario.h"
-	<iostream>
-	<fstream>
-	<stdlib.h>
-	<cstdlib>
-	<conio.h>
-	<iomanip>
-	<string>
-	<vector>
-	<chrono>
-
-1686148302 source:c:\users\erick solares\onedrive\documentos\progra 1\examenf\proyectofinal\src\bitacora.cpp
 	"bitacora.h"
 	<iostream>
 	<fstream>
@@ -627,7 +603,31 @@
 	<vector>
 	<chrono>
 
-1686148302 source:c:\users\erick solares\onedrive\documentos\progra 1\examenf\proyectofinal\src\usuario.cpp
+1686148302 c:\users\erick solares\downloads\nueva carpeta (5)\prototipop1ef2023\include\bitacora.h
+	"usuario.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
+1686148302 source:c:\users\erick solares\downloads\nueva carpeta (5)\prototipop1ef2023\src\bitacora.cpp
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
+1686158579 source:c:\users\erick solares\downloads\nueva carpeta (5)\prototipop1ef2023\src\usuario.cpp
 	"usuario.h"
 	"bitacora.h"
 	<iostream>

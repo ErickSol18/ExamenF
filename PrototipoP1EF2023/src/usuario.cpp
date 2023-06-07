@@ -27,10 +27,11 @@ void usuario::menuAdministrador()
 	cout << "\t\t\t*==============================*" << endl;
 	cout << "\t\t\t|   INGRESO DE ADMINISTRADOR   |" << endl;
 	cout << "\t\t\t*==============================*" << endl;
+	cout << "\t\t\t 0. Datos del estudiante" << endl;
 	cout << "\t\t\t 1. Ingresar Administrador" << endl;
 	cout << "\t\t\t 2. Salir del sistema" << endl;
 	cout << "\t\t\t*==============================*" << endl;
-	cout << "\t\t\t    Opciones a escoger:[1/2]  " << endl;
+	cout << "\t\t\t    Opciones a escoger:[0/1/2]  " << endl;
 	cout << "\t\t\t*==============================*" << endl;
 	cout << "\t\t\t    Ingresa una Opcion: ";
     cin >> Opciones;
@@ -38,31 +39,27 @@ void usuario::menuAdministrador()
     {
     case 0:
         system("cls");
-        std::cout << "*===========================================*" << std::endl;
-        std::cout << "||    Bienvenido al Programa EASTER EGG    ||" << std::endl;
-        std::cout << "*===========================================*" << std::endl;
-        std::cout << std::endl;
-        std::cout << "    UUUU   UUUU   MMMM     MMM   GGGGGG   " << std::endl;
-        std::cout << "    UUUU   UUUU   MMMMM   MMMM  GGGGGGGG  " << std::endl;
-        std::cout << "    UUUU   UUUU   MMMMMM MMMMM GGG        " << std::endl;
-        std::cout << "    UUUU   UUUU   MMM MMMM MMM GGG   GGGGG " << std::endl;
-        std::cout << "    UUUU   UUUU   MMM  MM  MMM GGG    GGGG  " << std::endl;
-        std::cout << "    UUUU   UUUU   MMM      MMM  GGGGGGGGG   " << std::endl;
-        std::cout << "    UUUUUUUUUUU   MMM      MMM   GGGGGGG  " << std::endl;
-        std::cout << "     UUUUUUUUU    MMM      MMM    GGGGG   " << std::endl;
-        std::cout << std::endl;
-        std::cout << "            Bienvenido al programa" << std::endl;
-        std::cout << "Esperamos que disfrutes explorando nuevas posibilidades." << std::endl;
-        std::cout << std::endl;
-        std::cout << "=============================================" << std::endl;
-        std::cout << "||          NOMBRE DE LOS CREADORES        ||" << std::endl;
-        std::cout << "=============================================" << std::endl;
-        std::cout << "||     9959-22-9790        Javier Lima     ||" << std::endl;
-        std::cout << "||     9959-22-9304        Kesdy Melgar    ||" << std::endl;
-        std::cout << "||     9959-22-8           Julio Molina    ||" << std::endl;
-        std::cout << "||     9959-22-5755        Erick Solares   ||" << std::endl;
-        std::cout << "=============================================" << std::endl;
-        std::cout << std::endl;
+        cout << "*============================================*" << endl;
+        cout << "|| EXAMEN FINAL DEL CURSO DE PROGRAMACION I ||" << endl;
+        cout << "*============================================*" << endl;
+        cout << std::endl;
+        cout << "    UUUU   UUUU   MMMM     MMM   GGGGGG   " << endl;
+        cout << "    UUUU   UUUU   MMMMM   MMMM  GGGGGGGG  " << endl;
+        cout << "    UUUU   UUUU   MMMMMM MMMMM GGG        " << endl;
+        cout << "    UUUU   UUUU   MMM MMMM MMM GGG   GGGGG " << endl;
+        cout << "    UUUU   UUUU   MMM  MM  MMM GGG    GGGG  " << endl;
+        cout << "    UUUU   UUUU   MMM      MMM  GGGGGGGGG   " << endl;
+        cout << "    UUUUUUUUUUU   MMM      MMM   GGGGGGG  " << endl;
+        cout << "     UUUUUUUUU    MMM      MMM    GGGGG   " << endl;
+        cout << endl;
+        cout << "=============================================" << endl;
+        cout << "||             DATOS DEL ALUMNO            ||" << endl;
+        cout << "=============================================" << endl;
+        cout << "||                9959-22-5755             ||" << endl;
+        cout << "||        Erick Alexander Solares Rosales  ||" << endl;
+        cout << "||               Sede: Portales            ||" << endl;
+        cout << "=============================================" << endl;
+        cout << std::endl;
         break;
     case 1:
         insertarAdministrador();
@@ -91,15 +88,9 @@ void usuario::insertarAdministrador()
     vector<string> usuarios;
     vector<string> claves;
 
-    usuarios.push_back("Kesdy");
     usuarios.push_back("Erick");
-    usuarios.push_back("Julio");
-    usuarios.push_back("Javier");
 
-    claves.push_back("KES");
     claves.push_back("ERI");
-    claves.push_back("JUL");
-    claves.push_back("JAV");
 
     int contador = 0;
     bool ingresa = false;
@@ -107,13 +98,19 @@ void usuario::insertarAdministrador()
     {
         system("cls");
         fstream file;
-        cout << "          __^__                                     __^__"<< endl;
-        cout << "         ( ___ )===================================( ___ )"<< endl;
-        cout << "          | / |                                     | / |"<< endl;
-        cout << "          | / | INGRESA LOS DATOS DE ADMINISTRACION | / |"<< endl;
-        cout << "          |___|                                     |___|"<< endl;
-        cout << "         (_____)===================================(_____)"<< endl;
-        cout << "\        ================================================="<< endl;
+        cout << "               __^__                                     __^__"<< endl;
+        cout << "             ( ___ )===================================( ___ )"<< endl;
+        cout << "               | / |                                     | / |"<< endl;
+        cout << "               | / | INGRESA LOS DATOS DE ADMINISTRACION | / |"<< endl;
+        cout << "               |___|                                     |___|"<< endl;
+        cout << "             (_____)===================================(_____)"<< endl;
+        cout << "             ================================================="<< endl;
+        cout << "===============================================================================" << endl;
+        cout << "||                           AYUDA PARA INGRESAR                             ||" << endl;
+        cout << "==============================================================================" << endl;
+        cout << "||  USUARIO: Nombre del usuario                                              ||" << endl;
+        cout << "||  PASSWORD: ***********                                                    ||" << endl;
+        cout << "===============================================================================" << endl;
         cout << "\t\t\tIngresa Usuario \n";
 
         cout << "\t\t\tUsuario: ";
@@ -156,7 +153,7 @@ void usuario::insertarAdministrador()
         {
             system("cls");
             std::cout << "=====================================================" << std::endl;
-            std::cout << "||  El Administrador y/o password son incorrectos  ||" << std::endl;
+            std::cout << "||     El usuario y/o password son incorrectos     ||" << std::endl;
             std::cout << "=====================================================" << std::endl;
             cin.get();
             contador++;
@@ -192,8 +189,7 @@ void usuario::insertarAdministrador()
     std::cout << "||       BB   BB   II    EE       NN   NNNN     VV VV     EE        NN  NNNN    II    DD   DD  OO   OO     ||" << std::endl;
     std::cout << "||       BBBBBB   IIII   EEEEEEE  NN    NNN       V       EEEEEEE   NN   NNN   IIII   DDDDDD   OOOOOOO     ||" << std::endl;
     std::cout << "**=========================================================================================================**" << std::endl;
-    std::cout << "||                            Bienvenido, " << nameAdministrador << " al programa de nomina                                     ||" << std::endl;
-    std::cout << "||       Esperamos que esta herramienta sea de utilidad para calcular los salarios de los empleados        ||" << std::endl;
+    std::cout << "||                       Bienvenido, " << nameAdministrador << " al programa de recetas medicas                          ||" << std::endl;
     std::cout << "**=========================================================================================================**" << std::endl;
     std::cout << std::endl;
     system("pause");
@@ -203,16 +199,16 @@ void usuario::insertarAdministrador()
     cout << "          __^__                                     __^__"<< endl;
     cout << "         ( ___ )===================================( ___ )"<< endl;
     cout << "          | / |                                     | / |"<< endl;
-    cout << "          | / |            MENU GENERAL             | / |"<< endl;
+    cout << "          | / |            MENU General             | / |"<< endl;
     cout << "          |___|                                     |___|"<< endl;
     cout << "         (_____)===================================(_____)"<< endl;
     cout << "\        ================================================="<< endl;
     cout << "                 *===============================*"<< endl;
     cout << "                 |   Porfavor, elije una opcion  |"<< endl;
     cout << "                 |                               |"<< endl;
-    cout << "                 | 1. Catalogos                  |"<< endl;
+    cout << "                 | 1. Procesos                   |"<< endl;
     cout << "                 | 2. Informes                   |"<< endl;
-    cout << "                 | 3. Procesos                   |"<< endl;
+    cout << "                 | 3. Cerrar Sesion              |"<< endl;
     cout << "                 | 4. Salir del sistema          |"<< endl;
     cout << "                 |                               |"<< endl;
     cout << "                 *===============================*"<< endl;
@@ -241,10 +237,10 @@ void usuario::insertarAdministrador()
     cout << "                 *===============================*"<< endl;
     cout << "                 |   Porfavor, elije una opcion  |"<< endl;
     cout << "                 |                               |"<< endl;
-    cout << "                 | 1. Trabajadores               |"<< endl;
+    cout << "                 | 1. Clientes                   |"<< endl;
     cout << "                 | 2. Bitacora                   |"<< endl;
     cout << "                 | 3. Aplicaciones               |"<< endl;
-    cout << "                 | 4. Departamentos              |"<< endl;
+    cout << "                 | 4. Peliculas                  |"<< endl;
     cout << "                 | 5. Salir al menu inicial      |"<< endl;
     cout << "                 | 6. Salir del sistema          |"<< endl;
     cout << "                 |                               |"<< endl;
@@ -271,17 +267,17 @@ void usuario::insertarAdministrador()
             cout << "         -------------------------------------------------"<< endl;
             cout << "                   7000		INGRESOFALLIDO             "<< endl;
             cout << "                   7001		INGRESO                    "<< endl;
-            cout << "                   7300		MENUTRABAJADORES           "<< endl;
-            cout << "                   7301		AGRTRABAJADORES            "<< endl;
-            cout << "                   7302		REPTRABAJADORES            "<< endl;
-            cout << "                   7303		MODTRABAJADORES            "<< endl;
-            cout << "                   7304		BUSTRABAJADORES            "<< endl;
-            cout << "                   7305		BORTRABAJADORES            "<< endl;
+            cout << "                   7300		MENUCLIENTES               "<< endl;
+            cout << "                   7301		+.CLIENTES                 "<< endl;
+            cout << "                   7302		REP.CLIENTES               "<< endl;
+            cout << "                   7303		MOD.CLIENTES               "<< endl;
+            cout << "                   7304		BUSCAR.CLIENTES            "<< endl;
+            cout << "                   7305		-.CLIENTES                 "<< endl;
             cout << "                   7400		REPAPLICACIONES            "<< endl;
             cout << "                   7500        MENUDEPARTAMENTOS          "<< endl;
             cout << "                   7501        REPADMINISTRACION          "<< endl;
             cout << "                   7502        REPVENTAS                  "<< endl;
-            cout << "                   7999		SALIDA                     "<< endl;
+            cout << "                   7999		LOG OUT                    "<< endl;
             cout << "         ------------------------ -------------------------"<< endl;
             bit.ingreso(nameAdministrador,"7400");
             system("pause");
@@ -361,27 +357,6 @@ void usuario::menuTrabajador()
 	do
     {
     system("cls");
-    cout << "       888b      88    ,ad8888ba,    88b           d88  88  888b      88         db               "<< endl;
-    cout << "       8888b     88   d8'    `''8b   888b         d888  88  8888b     88        d88b              "<< endl;
-    cout << "       88 `8b    88  d8'        `8b  88`8b       d8'88  88  88 `8b    88       d8'`8b             "<< endl;
-    cout << "       88  `8b   88  88          88  88 `8b     d8' 88  88  88  `8b   88      d8'  `8b            "<< endl;
-    cout << "       88   `8b  88  88          88  88  `8b   d8'  88  88  88   `8b  88     d8YaaaaY8b           "<< endl;
-    cout << "       88    `8b 88  Y8,        ,8P  88   `8b d8'   88  88  88    `8b 88    d8''''''''8b          "<< endl;
-    cout << "       88     `8888   Y8a.    .a8P   88    `888'    88  88  88     `8888   d8'        `8b         "<< endl;
-    cout << "       88      `888    `'Y8888Y'     88     `8'     88  88  88      `888  d8'          `8b        "<< endl;
-    cout << "                                                                                                  "<< endl;
-    cout << "                                                                                                  "<< endl;
-    cout << "                    88        88  88b           d88    ,ad8888ba,                                 "<< endl;
-    cout << "                    88        88  888b         d888   d8''    `'8b                                "<< endl;
-    cout << "                    88        88  88`8b       d8'88  d8'                                          "<< endl;
-	cout << "                    88        88  88 `8b     d8' 88  88                                           "<< endl;
-	cout << "                    88        88  88  `8b   d8'  88  88      88888                                "<< endl;
-	cout << "                    88        88  88   `8b d8'   88  Y8,        88                                "<< endl;
-	cout << "                    Y8a.    .a8P  88    `888'    88   Y8a.    .a88                                "<< endl;
-	cout << "                    `''Y8888Y''   88     `8'     88   `''Y88888P''                                "<< endl;
-    cout << "                                                                                           "<< endl;
-	system("pause");
-	system("cls");
 	bitacora bit;
 	codigo="7300";
 	bit.ingreso(nameAdministrador,codigo);
@@ -391,18 +366,18 @@ void usuario::menuTrabajador()
     cout << "          __^__                                     __^__"<< endl;
     cout << "         ( ___ )===================================( ___ )"<< endl;
     cout << "          | / |                                     | / |"<< endl;
-    cout << "          | / |              Catalogos              | / |"<< endl;
+    cout << "          | / |             CINE UMG                | / |"<< endl;
     cout << "          |___|                                     |___|"<< endl;
     cout << "         (_____)===================================(_____)"<< endl;
     cout << "\        ================================================="<< endl;
     cout << "                 *===============================*"<< endl;
     cout << "                 |   Porfavor, elije una opcion  |"<< endl;
     cout << "                 |                               |"<< endl;
-    cout << "                 | 1. Ingresar Trabajador        |"<< endl;
-    cout << "                 | 2. Desplegar Trabajador       |"<< endl;
-    cout << "                 | 3. Modificar Trabajador       |"<< endl;
-    cout << "                 | 4. Buscar Trabajador          |"<< endl;
-    cout << "                 | 5. Borrar Trabajador          |"<< endl;
+    cout << "                 | 1. Ingresar datos cliente     |"<< endl;
+    cout << "                 | 2. Desplegar cliente          |"<< endl;
+    cout << "                 | 3. Modificar cliente          |"<< endl;
+    cout << "                 | 4. Buscar cliente             |"<< endl;
+    cout << "                 | 5. Borrar cliente             |"<< endl;
     cout << "                 | 6. Regresar al inicio         |"<< endl;
     cout << "                 | 7. Salir del sistema          |"<< endl;
     cout << "                 |                               |"<< endl;
@@ -418,7 +393,7 @@ void usuario::menuTrabajador()
     		cout << "          __^__                                     __^__"<< endl;
             cout << "         ( ___ )===================================( ___ )"<< endl;
             cout << "          | / |                                     | / |"<< endl;
-            cout << "          | / |  Desea gregar un nuevo trabajador?  | / |"<< endl;
+            cout << "          | / |  Desea gregar un nuevo cliente   ?  | / |"<< endl;
             cout << "          |___|                                     |___|"<< endl;
             cout << "         (_____)===================================(_____)"<< endl;
             cout << "         =================================================" <<endl;
@@ -483,77 +458,67 @@ void usuario::insertarTrabajador()
     cout << "          __^__                                     __^__"<< endl;
     cout << "         ( ___ )-----------------------------------( ___ )"<< endl;
     cout << "          | / |                                     | / |"<< endl;
-    cout << "          | / |    Agregar informacion Trabajador   | / |"<< endl;
+    cout << "          | / |    Agregar informacion cliente      | / |"<< endl;
     cout << "          |___|                                     |___|"<< endl;
     cout << "         (_____)-----------------------------------(_____)"<< endl;
-	cout << "\t\t  Ingresa ID del trabajador : ";
+	cout << "\t\t  Ingresa ID del cliente : ";
 	cin >> ID;
-	cout << "\t\t  Ingresa Nombre del trabajor : ";
+	cout << "\t\t  Ingresa Nombre del cliente : ";
 	cin >> name;
-	cout << "\t\t  Ingresa Contrasena Trabajador : ";
-	cin >> password;
-	cout << "\t\t  Ingresa el numero de telefono del trabajador : ";
+	cout << "\t\t  Ingresa Apellido del cliente : ";
+	cin >> apellido;
+	cout << "\t\t  Ingresa DPI del cliente : ";
+	cin >> dpi;
+	cout << "\t\t  Ingresa el numero de telefono del cliente : ";
 	cin >> telefono;
-	cout << "\t\t  Ingrese departamento V/A/C/R(Ventas, Administracion, Contabilidad, Recepcion): ";
-	cin >> departamento;
-	cout << "\t\t  Ingresa El salario del trabajador : Q";
-	cin >> salario;
-	cout << "\t\t  Ingresa las horas extras trabajadas : ";
-	cin >> cantidadHoras;
-	cout << "\t\t  Ingresa el valor de las extras trabajadas : Q";
-	cin >> valorHoras;
-    totalHoras = cantidadHoras*valorHoras;
-    cout << "\t\t  Ingresa el valor del adelanto : Q";
-    cin >> adelantos;
+	cout << "\t\t  Ingrese Pelicula M/S/G/R(Mario Bros, SpiderMan, Guardianes de la galaxia, Rapidos y furiosos ): ";
+	cin >> Pelicula;
     system("cls");
     cout << "=============================================" <<endl;
-    cout << "||     Listo! nuevo trabajador agregado    ||" <<endl;
+    cout << "||      Listo! nuevo cliente agregado     ||" <<endl;
     cout << "=============================================" <<endl;
-    IGSS = (salario+totalHoras)*(0.0483);
-    IRTRA = (salario+totalHoras)*(0.01);
-    salarioNeto=(salario+totalHoras)-(IGSS+IRTRA);
-	if (departamento=="V")
+	if (Pelicula=="M")
     {
-        departamento="Ventas";
-        file.open("Ventas.txt", ios::app | ios::out);
-        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << password << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< departamento << std::left << std::setw(15)  << salario << std::left << std::setw(15) << cantidadHoras << std::setw << std::setw(15) << IGSS << std::left << std::setw(15) << IRTRA << std::left << std::setw(15) << salarioNeto << std::setw << std::setw(15) << adelantos << "\n";
+        Pelicula="Mario";
+        file.open("Mario.txt", ios::app | ios::out);
+        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
         bitacora bit;
         codigo="7301";
         bit.ingreso(nameAdministrador,codigo);
         file.close();
     }
-    if (departamento=="A")
+    if (Pelicula=="S")
     {
-        departamento="Admin";
-        file.open("Administracion.txt", ios::app | ios::out);
-        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << password << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< departamento << std::left << std::setw(15)  << salario << std::left << std::setw(15) << cantidadHoras << std::setw << std::setw(15) << IGSS << std::left << std::setw(15) << IRTRA << std::left << std::setw(15) << salarioNeto << std::setw << std::setw(15) << adelantos << "\n";
+        Pelicula="SpiderMan";
+        file.open("SpiderMan.txt", ios::app | ios::out);
+        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
         bitacora bit;
         codigo="7301";
         bit.ingreso(nameAdministrador,codigo);
         file.close();
     }
-    if (departamento=="C")
+    if (Pelicula=="G")
     {
-        departamento="Conta";
-        file.open("Contabilidad.txt", ios::app | ios::out);
-        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << password << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< departamento << std::left << std::setw(15)  << salario << std::left << std::setw(15) << cantidadHoras << std::setw << std::setw(15) << IGSS << std::left << std::setw(15) << IRTRA << std::left << std::setw(15) << salarioNeto << std::setw << std::setw(15) << adelantos << "\n";
+        Pelicula="Guardianes";
+        file.open("Guardianes.txt", ios::app | ios::out);
+        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
         bitacora bit;
         codigo="7301";
         bit.ingreso(nameAdministrador,codigo);
         file.close();
     }
-    if (departamento=="R")
+    if (Pelicula=="R")
     {
-        departamento="Recep";
-        file.open("Recepcion.txt", ios::app | ios::out);
-        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << password << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< departamento << std::left << std::setw(15)  << salario << std::left << std::setw(15) << cantidadHoras << std::setw << std::setw(15) << IGSS << std::left << std::setw(15) << IRTRA << std::left << std::setw(15) << salarioNeto << std::setw << std::setw(15) << adelantos << "\n";
+        Pelicula="Rapidos";
+        file.open("Rapidos.txt", ios::app | ios::out);
+        file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
         bitacora bit;
         codigo="7301";
         bit.ingreso(nameAdministrador,codigo);
         file.close();
     }
     file.open("Usuarios.txt", ios::app | ios::out);
-	file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << password << std::left << std::setw(15)<< telefono << std::left << std::setw(15)<< departamento << std::left << std::setw(15)  << salario << std::left << std::setw(15) << cantidadHoras << std::setw << std::setw(15) << IGSS << std::left << std::setw(15) << IRTRA << std::left << std::setw(15) << salarioNeto << std::setw << std::setw(15) << adelantos << "\n";
+    file << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
 	bitacora bit;
 	codigo="7301";
 	bit.ingreso(nameAdministrador,codigo);
@@ -568,15 +533,15 @@ void usuario::desplegarTrabajador()
     cout << "" << endl;
     cout << "\t\t    Nombre Administrador: " << nameAdministrador << endl;
     cout << "" << endl;
-	cout << "                                               __^__                                     __^__"<< endl;
-    cout << "                                              ( ___ )-----------------------------------( ___ )"<< endl;
-    cout << "                                               | / |                                     | / |"<< endl;
-    cout << "                                               | / |   Tabla de Detalles de Trabajador   | / |"<< endl;
-    cout << "                                               |___|                                     |___|"<< endl;
-    cout << "                                              (_____)-----------------------------------(_____)"<< endl;
-    cout << "===============================================================================================================================================================" << endl;
-    cout << "ID             NOMBRE       PASSWORD         TELEFONO         PUESTO      SALARIO     HORAS EXTRAS       IGSS           IRTRA        SALARIO NETO    ADELANTOS " << endl;
-    cout << "===============================================================================================================================================================" << endl;
+	cout << "                     __^__                                     __^__"<< endl;
+    cout << "                    ( ___ )-----------------------------------( ___ )"<< endl;
+    cout << "                     | / |                                     | / |"<< endl;
+    cout << "                     | / |    Tabla de Detalles de Paciente    | / |"<< endl;
+    cout << "                     |___|                                     |___|"<< endl;
+    cout << "                    (_____)-----------------------------------(_____)"<< endl;
+    cout << "===============================================================================================" << endl;
+    cout << "ID             NOMBRE          APELLIDO          DPI         TELEFONO         ENFERMEDAD       " << endl;
+    cout << "===============================================================================================" << endl;
 	file.open("Usuarios.txt",ios::in);
 	if(!file)
 	{
@@ -620,12 +585,12 @@ void usuario::modificarTrabajador()
 		cout << "\n Ingrese ID del usuario que quiere modificar: ";
 		cin >> user_ID;
 		file1.open("Record.txt",ios::app | ios::out);
-		        file >> ID >> name >> password >> telefono >> departamento >> salario >> cantidadHoras >> IGSS >> IRTRA >> salarioNeto >>adelantos ;
+		        file >> ID >> name >> apellido >> dpi >> telefono >> Pelicula ;
 		while(!file.eof())
 		{
 			if(user_ID!=ID)
 			{
-			 file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << password << std::left << std::setw(15)<< telefono << std::left << std::setw(15)<< departamento << std::left << std::setw(15)  << salario << std::left << std::setw(15) << cantidadHoras << std::setw << std::setw(15) << IGSS << std::left << std::setw(15) << IRTRA << std::left << std::setw(15) << salarioNeto << std::setw << std::setw(15) << adelantos << "\n";
+                file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << apellido << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
 			}
 			else
 			{
@@ -634,15 +599,15 @@ void usuario::modificarTrabajador()
 				cout << "\t\t\tIngrese Nombre Persona: ";
 				cin >> name;
 				cout << "\t\t\tIngrese Contrasena Persona: ";
-				cin >> password;
+				cin >> dpi;
 				cout << "\t\t\tIngrese Telefono Persona: ";
 				cin >> telefono;
 				cout << "\t\t\tIngrese Departamento Persona: ";
-				cin >> departamento;
-                file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << password << std::left << std::setw(15)<< telefono << std::left << std::setw(15)<< departamento << std::left << std::setw(15)  << salario << std::left << std::setw(15) << cantidadHoras << std::setw << std::setw(15) << IGSS << std::left << std::setw(15) << IRTRA << std::left << std::setw(15) << salarioNeto << std::setw << std::setw(15) << adelantos << "\n";
+				cin >> Pelicula;
+                file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
 				found++;
 			}
-			        file >> ID >> name >> password >> telefono >> departamento >> salario >> cantidadHoras >> IGSS >> IRTRA >> salarioNeto >>adelantos ;
+			        file >> ID >> name >> apellido >> dpi >> telefono >> Pelicula ;
 
 		}
 		file1.close();
@@ -674,12 +639,12 @@ void usuario::buscarTrabajador()
 		cout << "          __^__                                      __^__"<< endl;
         cout << "         ( ___ )------------------------------------( ___ )"<< endl;
         cout << "          | / |                                      | / |"<< endl;
-        cout << "          | / |     Datos del Trabajador buscado     | / |"<< endl;
+        cout << "          | / |     Datos del Paciente buscado     | / |"<< endl;
         cout << "          |___|                                      |___|"<< endl;
         cout << "         (_____)------------------------------------(_____)"<< endl;
 		cout << "\nIngrese ID de la Persona que quiere buscar: ";
 		cin >> user_ID;
-		file >> ID >> name >> password >> telefono >> departamento >> salario >> cantidadHoras >> IGSS >> IRTRA >> salarioNeto >>adelantos ;
+		file >> ID >> name >> dpi >> telefono >> Pelicula ;
 		while(!file.eof())
 		{
 			if(user_ID == ID)
@@ -688,23 +653,18 @@ void usuario::buscarTrabajador()
                 cout << "                                              "<< endl;
                 cout << "                   ID Trabajador: "<< ID << endl;
                 cout << "                   Nombre Trabajador : "<< name << endl;
-                cout << "                   Contrasena Trabajador : "<< password << endl;
-                cout << "                   Salario : Q"<< salario << endl;
-                cout << "                   Pago de IGSS : Q"<< IGSS << endl;
-                cout << "                   Pago de IRTRA: Q"<< IRTRA << endl;
-                cout << "                   Cantidad de horas extras: "<< cantidadHoras << endl;
-                cout << "                   Total de adelantos: Q"<< adelantos << endl;
-                cout << "                   Total de las horas extras: Q"<< totalHoras << endl;
-                cout << "                   Salario Neto : Q"<< salarioNeto << endl;
+                cout << "                   DPI de Paciente : "<< dpi << endl;
+                cout << "                   Enfermedad del paciente"<< Pelicula << endl;
+                cout << "                   Telefono: "<< telefono << endl;
                 cout << "                                              "<< endl;
                 cout << "                 *============================* "<< endl;
 				found++;
 			}
-			file >> ID >> name >> password >> telefono >> departamento >> salario >> cantidadHoras >> IGSS >> IRTRA >> salarioNeto >>adelantos ;
+			file >> ID >> name >> dpi >> telefono >> Pelicula ;
 		}
 		if(found == 0)
 		{
-			cout<<"\n\t\t\t Trabajador no encontrado...";
+			cout<<"\n\t\t\t Paciente no encontrado...";
 		}
 		file.close();
 		bitacora bit;
@@ -718,7 +678,7 @@ void usuario::borrarTrabajador()
 	fstream file,file1;
 	string user_ID;
 	int found = 0;
-	cout << "\n-------------------------Detalles Usuario a Borrar-------------------------" << endl;
+	cout << "\n-------------------------Detalles Paciente a Borrar-------------------------" << endl;
 	file.open("Usuarios.txt",ios::in);
 	if(!file)
 	{
@@ -728,22 +688,22 @@ void usuario::borrarTrabajador()
 	else
 	{   cout << "" << endl;
 	    cout << "\n\tUsuario: " << nameAdministrador << endl << endl;
-		cout << "\n Ingrese el ID del Usuario que quiere borrar: ";
+		cout << "\n Ingrese el ID del Paciente que quiere borrar: ";
 		cin >> user_ID;
 		file1.open("Record.txt",ios::app | ios::out);
-        file >> ID >> name >> password >> telefono >> departamento >> salario >> cantidadHoras >> IGSS >> IRTRA >> salarioNeto >>adelantos ;
+        file >> ID >> name >> dpi >> telefono >> Pelicula ;
 		while(!file.eof())
 		{
 			if(user_ID!=ID)
 			{
-                file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << password << std::left << std::setw(15)<< telefono << std::left << std::setw(15)<< departamento << std::left << std::setw(15)  << salario << std::left << std::setw(15) << cantidadHoras << std::setw << std::setw(15) << IGSS << std::left << std::setw(15) << IRTRA << std::left << std::setw(15) << salarioNeto << std::setw << std::setw(15) << adelantos << "\n";
+                file1 << std::left << std::setw(15) << ID << std::left << std::setw(15) << name << std::left << std::setw(15) << dpi << std::left << std::left << std::setw(15)<< telefono << std::setw(15)<< enfermedad << "\n";
 			}
 			else
 			{
 				found++;
 				cout << "\n\t\t\tBorrado de informacion exitoso";
 			}
-        file >> ID >> name >> password >> telefono >> departamento >> salario >> cantidadHoras >> IGSS >> IRTRA >> salarioNeto >>adelantos ;
+        file >> ID >> name >> dpi >> telefono >> Pelicula ;
 		}
 		if(found == 0)
 		{
@@ -766,17 +726,17 @@ void usuario::desplegarAdministracion()
 	int total = 0;
     cout << "\t\t\tNombre Administrador: " << nameAdministrador << endl;
     cout << "" << endl;
-	cout << "                                               __^__                                     __^__"<< endl;
-    cout << "                                              ( ___ )-----------------------------------( ___ )"<< endl;
-    cout << "                                               | / |                                     | / |"<< endl;
-    cout << "                                               | / |   Tabla de Detalles de Trabajador   | / |"<< endl;
-    cout << "                                               |___|     Departamento Administrativo     |___|"<< endl;
-    cout << "                                               |___|                                     |___|"<< endl;
-    cout << "                                              (_____)-----------------------------------(_____)"<< endl;
-    cout << "===============================================================================================================================================================" << endl;
-    cout << "ID             NOMBRE       PASSWORD         PUESTO         TELEFONO      SALARIO     HORAS EXTRAS       IGSS           IRTRA        SALARIO NETO    ADELANTOS " << endl;
-    cout << "===============================================================================================================================================================" << endl;
-	file.open("Administracion.txt",ios::in);
+	cout << "     __^__                                     __^__"<< endl;
+    cout << "    ( ___ )-----------------------------------( ___ )"<< endl;
+    cout << "     | / |                                     | / |"<< endl;
+    cout << "     | / |    Tabla de Detalles de Pacientes   | / |"<< endl;
+    cout << "     |___|            Dolor de Mario          |___|"<< endl;
+    cout << "     |___|                                     |___|"<< endl;
+    cout << "    (_____)-----------------------------------(_____)"<< endl;
+    cout << "====================================================" << endl;
+    cout << "ID             NOMBRE       DPI         TELEFONO    " << endl;
+    cout << "====================================================" << endl;
+	file.open("Mario.txt",ios::in);
 	if(!file)
 	{
 		cout << "\n\t\t\tNo hay informacion...";
@@ -808,17 +768,17 @@ void usuario::desplegarVentas()
 	int total = 0;
     cout << "\t\t\tNombre Administrador: " << nameAdministrador << endl;
     cout << "" << endl;
-	cout << "                                               __^__                                     __^__"<< endl;
-    cout << "                                              ( ___ )-----------------------------------( ___ )"<< endl;
-    cout << "                                               | / |                                     | / |"<< endl;
-    cout << "                                               | / |   Tabla de Detalles de Trabajador   | / |"<< endl;
-    cout << "                                               |___|        Departamento de Ventas       |___|"<< endl;
-    cout << "                                               |___|                                     |___|"<< endl;
-    cout << "                                              (_____)-----------------------------------(_____)"<< endl;
-    cout << "===============================================================================================================================================================" << endl;
-    cout << "ID             NOMBRE       PASSWORD         PUESTO         TELEFONO      SALARIO     HORAS EXTRAS       IGSS           IRTRA        SALARIO NETO    ADELANTOS " << endl;
-    cout << "===============================================================================================================================================================" << endl;
-	file.open("Ventas.txt",ios::in);
+    cout << "     __^__                                     __^__"<< endl;
+    cout << "    ( ___ )-----------------------------------( ___ )"<< endl;
+    cout << "     | / |                                     | / |"<< endl;
+    cout << "     | / |    Tabla de Detalles de Pacientes   | / |"<< endl;
+    cout << "     |___|           Dolor de Guardianes         |___|"<< endl;
+    cout << "     |___|                                     |___|"<< endl;
+    cout << "    (_____)-----------------------------------(_____)"<< endl;
+    cout << "====================================================" << endl;
+    cout << "ID             NOMBRE       DPI         TELEFONO    " << endl;
+    cout << "====================================================" << endl;
+	file.open("Guardianes.txt",ios::in);
 	if(!file)
 	{
 		cout << "\n\t\t\tNo hay informacion...";
@@ -850,17 +810,17 @@ void usuario::desplegarContabilidad()
 	int total = 0;
     cout << "\t\t\tNombre Administrador: " << nameAdministrador << endl;
     cout << "" << endl;
-	cout << "                                               __^__                                     __^__"<< endl;
-    cout << "                                              ( ___ )-----------------------------------( ___ )"<< endl;
-    cout << "                                               | / |                                     | / |"<< endl;
-    cout << "                                               | / |   Tabla de Detalles de Trabajador   | / |"<< endl;
-    cout << "                                               |___|     Departamento Contabilidad       |___|"<< endl;
-    cout << "                                               |___|                                     |___|"<< endl;
-    cout << "                                              (_____)-----------------------------------(_____)"<< endl;
-    cout << "===============================================================================================================================================================" << endl;
-    cout << "ID             NOMBRE       PASSWORD         PUESTO         TELEFONO      SALARIO     HORAS EXTRAS       IGSS           IRTRA        SALARIO NETO    ADELANTOS " << endl;
-    cout << "===============================================================================================================================================================" << endl;
-	file.open("Contabilidad.txt",ios::in);
+    cout << "     __^__                                     __^__"<< endl;
+    cout << "    ( ___ )-----------------------------------( ___ )"<< endl;
+    cout << "     | / |                                     | / |"<< endl;
+    cout << "     | / |    Tabla de Detalles de Pacientes   | / |"<< endl;
+    cout << "     |___|           Dolor de SpiderMan         |___|"<< endl;
+    cout << "     |___|                                     |___|"<< endl;
+    cout << "    (_____)-----------------------------------(_____)"<< endl;
+    cout << "====================================================" << endl;
+    cout << "ID             NOMBRE       DPI         TELEFONO    " << endl;
+    cout << "====================================================" << endl;
+	file.open("SpiderMan.txt",ios::in);
 	if(!file)
 	{
 		cout << "\n\t\t\tNo hay informacion...";
@@ -892,17 +852,17 @@ void usuario::desplegarRecepcion()
 	int total = 0;
     cout << "\t\t\tNombre Administrador: " << nameAdministrador << endl;
     cout << "" << endl;
-	cout << "                                               __^__                                     __^__"<< endl;
-    cout << "                                              ( ___ )-----------------------------------( ___ )"<< endl;
-    cout << "                                               | / |                                     | / |"<< endl;
-    cout << "                                               | / |   Tabla de Detalles de Trabajador   | / |"<< endl;
-    cout << "                                               |___|     Departamento Recepcion          |___|"<< endl;
-    cout << "                                               |___|                                     |___|"<< endl;
-    cout << "                                              (_____)-----------------------------------(_____)"<< endl;
-    cout << "===============================================================================================================================================================" << endl;
-    cout << "ID             NOMBRE       PASSWORD         PUESTO         TELEFONO      SALARIO     HORAS EXTRAS       IGSS           IRTRA        SALARIO NETO    ADELANTOS " << endl;
-    cout << "===============================================================================================================================================================" << endl;
-	file.open("Recepcion.txt",ios::in);
+    cout << "     __^__                                     __^__"<< endl;
+    cout << "    ( ___ )-----------------------------------( ___ )"<< endl;
+    cout << "     | / |                                     | / |"<< endl;
+    cout << "     | / |    Tabla de Detalles de Pacientes   | / |"<< endl;
+    cout << "     |___|              Rapidos leve            |___|"<< endl;
+    cout << "     |___|                                     |___|"<< endl;
+    cout << "    (_____)-----------------------------------(_____)"<< endl;
+    cout << "====================================================" << endl;
+    cout << "ID             NOMBRE       DPI         TELEFONO    " << endl;
+    cout << "====================================================" << endl;
+	file.open("Rapidos.txt",ios::in);
 	if(!file)
 	{
 		cout << "\n\t\t\tNo hay informacion...";
@@ -937,17 +897,17 @@ void usuario::menuDepartamentos()
     cout << "          __^__                                     __^__"<< endl;
     cout << "         ( ___ )-----------------------------------( ___ )"<< endl;
     cout << "          | / |                                     | / |"<< endl;
-    cout << "          | / |            MENU DEPARTAMENTOS       | / |"<< endl;
+    cout << "          | / |         MENU DE ENFERMEDADES        | / |"<< endl;
     cout << "          |___|                                     |___|"<< endl;
     cout << "         (_____)-----------------------------------(_____)"<< endl;
     cout << "\        -------------------------------------------------"<< endl;
     cout << "                 *===============================*"<< endl;
     cout << "                 |   Porfavor, elije una opcion  |"<< endl;
     cout << "                 |                               |"<< endl;
-    cout << "                 | 1. Administracion             |"<< endl;
-    cout << "                 | 2. Ventas                     |"<< endl;
-    cout << "                 | 3. Contabilidad               |"<< endl;
-    cout << "                 | 4. Recepcion                  |"<< endl;
+    cout << "                 | 1. Mario                      |"<< endl;
+    cout << "                 | 2. Guardianes                 |"<< endl;
+    cout << "                 | 3. SpiderMan                  |"<< endl;
+    cout << "                 | 4. Rapidos                    |"<< endl;
     cout << "                 | 5. Salir del sistema          |"<< endl;
     cout << "                 |                               |"<< endl;
     cout << "                 |      Ingresa una Opcion       |"<< endl;
