@@ -203,16 +203,16 @@ void usuario::insertarAdministrador()
     cout << "          __^__                                     __^__"<< endl;
     cout << "         ( ___ )===================================( ___ )"<< endl;
     cout << "          | / |                                     | / |"<< endl;
-    cout << "          | / |            MENU DE INICIO           | / |"<< endl;
+    cout << "          | / |            MENU GENERAL             | / |"<< endl;
     cout << "          |___|                                     |___|"<< endl;
     cout << "         (_____)===================================(_____)"<< endl;
     cout << "\        ================================================="<< endl;
     cout << "                 *===============================*"<< endl;
     cout << "                 |   Porfavor, elije una opcion  |"<< endl;
     cout << "                 |                               |"<< endl;
-    cout << "                 | 1. Ingreso a la nomina        |"<< endl;
+    cout << "                 | 1. Catalogos                  |"<< endl;
     cout << "                 | 2. Informes                   |"<< endl;
-    cout << "                 | 3. Cerrar Sesion              |"<< endl;
+    cout << "                 | 3. Procesos                   |"<< endl;
     cout << "                 | 4. Salir del sistema          |"<< endl;
     cout << "                 |                               |"<< endl;
     cout << "                 *===============================*"<< endl;
@@ -391,7 +391,7 @@ void usuario::menuTrabajador()
     cout << "          __^__                                     __^__"<< endl;
     cout << "         ( ___ )===================================( ___ )"<< endl;
     cout << "          | / |                                     | / |"<< endl;
-    cout << "          | / |              NOMINA UMG             | / |"<< endl;
+    cout << "          | / |              Catalogos              | / |"<< endl;
     cout << "          |___|                                     |___|"<< endl;
     cout << "         (_____)===================================(_____)"<< endl;
     cout << "\        ================================================="<< endl;

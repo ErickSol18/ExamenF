@@ -577,3 +577,66 @@
 	<vector>
 	<chrono>
 
+1686148302 source:c:\users\erick solares\onedrive\documentos\progra 1\examenf\proyectofinal\main.cpp
+	"usuario.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
+1686148302 c:\users\erick solares\onedrive\documentos\progra 1\examenf\proyectofinal\include\usuario.h
+	"usuario.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
+1686148302 c:\users\erick solares\onedrive\documentos\progra 1\examenf\proyectofinal\include\bitacora.h
+	"usuario.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
+1686148302 source:c:\users\erick solares\onedrive\documentos\progra 1\examenf\proyectofinal\src\bitacora.cpp
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
+1686148302 source:c:\users\erick solares\onedrive\documentos\progra 1\examenf\proyectofinal\src\usuario.cpp
+	"usuario.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+	<vector>
+	<chrono>
+
